@@ -21,11 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from pioneer device
 $(call inherit-product, device/sony/pioneer/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common XenonHD stuff.
+$(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_pioneer
+PRODUCT_NAME := xenonhd_pioneer
 PRODUCT_DEVICE := pioneer
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := Xperia XA2
@@ -37,3 +37,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="H3113-user 8.0.0 50.1.A.4.76 2209478692 release-keys"
 
 BUILD_FINGERPRINT := Sony/H3113/H3113:8.0.0/50.1.A.4.76/2209478692:user/release-keys
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.xenonhd.maintainer=axxx007xxxz

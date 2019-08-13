@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_pioneer.mk
+    $(LOCAL_DIR)/xenonhd_pioneer.mk
